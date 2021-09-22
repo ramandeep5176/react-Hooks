@@ -10,7 +10,11 @@ const UseEffectBasics = () => {
     }
 
     console.log("call useEffect");
-  });
+  }, [value]);
+
+  useEffect(() => {
+    console.log("raman");
+  }, []);
   console.log("render component");
 
   return (
