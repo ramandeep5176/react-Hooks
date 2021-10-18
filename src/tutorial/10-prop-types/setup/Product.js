@@ -3,13 +3,13 @@ import { PropTypes } from "prop-types";
 import defaultImage from "../../../assets/default-image.jpeg";
 
 const Product = ({ image, name, price }) => {
-const url=image && image.url
+  const url = image && image.url;
   return (
     <article className="product">
       {/* <h4>single product</h4> */}
-      <img src={url} alt={name || 'default name'} />
+      <img src={url} alt={name || "default name"} />
       <h4>{name}</h4>
-      <p>${price || 1.00}</p>
+      <p>${price || 1.0}</p>
     </article>
   );
 };
